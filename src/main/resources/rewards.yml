@@ -1,0 +1,8 @@
+rewards:
+  1:
+    reward:
+      - minecraft:give %player% iron_ingot
+      - minecraft:give %player& emerald
+  2:
+    reward:
+      - minecraft:give %player% minecraft:diamond

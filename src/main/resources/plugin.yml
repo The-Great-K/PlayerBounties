@@ -1,0 +1,44 @@
+name: PlayerBounties
+version: '${version}'
+main: com.fadingdaze.playerBounties.PlayerBounties
+api-version: '1.21'
+load: STARTUP
+authors: [ The_Great_K ]
+description: "Bare bones player bounties plugin made for fading daze, made with Paper"
+website: "https://fadingdaze.com/"
+
+commands:
+  bounty:
+    description: "Starts bounty for given player."
+    usage: "/bounty [set | clear] [player] [seconds]"
+    permission: playerbounties.command.bounty
+    permission-message: "You do not have permission to use this command!"
+  gettracker:
+    description: "Gives tracking compass that points to player with bounty"
+    usage: "/gettracker"
+    permission: playerbounties.command.gettracker
+    permission-message: "You do not have permission to use this command!"
+  givebountyactivator:
+    description: "Gives player a bounty activator"
+    aliases: "/giveba"
+    usage: "/givebountyactivator [player]"
+    permission: playerbounties.command.giveba
+    permission-message: "You do not have permission to use this command!"
+#  reloadpbconfig:
+#    description: "Reloads bounty config"
+#    usage: "/reloadpbconfig"
+#    permission: playerbounties.command.reload
+#    permission-message: "You do not have permission to use this command!"
+permissions:
+  playerbounties.command.gettracker:
+    description: "Allows you to get a compass that tracks the current bounty"
+    default: true
+  playerbounties.command.giveba:
+    description: "Allows you to give said player a bounty activator"
+    default: op
+  playerbounties.command.bounty:
+    description: "Allows you to start or clear a bounty"
+    default: op
+#  playerbounties.command.reload:
+#    description: "Allows you to reload the plugin config"
+#    default: op

@@ -1,0 +1,7 @@
+# The bounty cannot run the commands perms listed
+# Perms should be listed as they are in Luck Perms
+restricted:
+  - essentials.tpa
+  - essentials.tpr
+  - essentials.spawn
+  - lands.command.spawn
