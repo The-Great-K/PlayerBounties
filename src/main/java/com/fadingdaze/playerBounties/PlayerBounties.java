@@ -41,7 +41,8 @@ public final class PlayerBounties extends JavaPlugin implements Listener {
 	public HashMap<UUID, PermissionAttachment> perms = new HashMap<>();
 
 	private Player bountyHead = null;
-	private int bountyDuration = 10800; // default value, 10800 seconds / 3 hours
+	public static int defaultBountyDuration = 10800; // default value, 10800 seconds / 3 hours
+	private int bountyDuration = defaultBountyDuration;
 
 	private Player lastBountyDamager;
 	private int damageTimer = 60;
@@ -120,7 +121,7 @@ public final class PlayerBounties extends JavaPlugin implements Listener {
 			}
 		}
 
-		setBountyDuration(10800);
+		setBountyDuration(defaultBountyDuration);
 		setBounty(null);
 		hasTracker.clear();
 	}

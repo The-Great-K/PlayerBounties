@@ -73,7 +73,7 @@ public class BountyCommand implements CommandExecutor, TabExecutor {
 							return false;
 						}
 					} else {
-						plugin.setBountyDuration(10800);
+						plugin.setBountyDuration(PlayerBounties.defaultBountyDuration);
 					}
 				}
 			} else {
